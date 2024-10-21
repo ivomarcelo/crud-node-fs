@@ -1,4 +1,4 @@
-import { Controller, Post } from '@nestjs/common';
+import { Controller, Post, Delete, Put} from '@nestjs/common';
 import { AppService } from './app.service';
 
 
@@ -10,4 +10,15 @@ export class AppController {
   createRoute(): any {
     return this.appService.create('');
   }
+  @Put()
+  updateItem() : any {
+    return this.appService.updateItem('');
+  }
+  @Delete()
+  deleteItem() {
+    return this.appService.deleteItem('');
+  }
 }
+
+
+
