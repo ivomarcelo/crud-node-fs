@@ -12,11 +12,11 @@ export class AppController {
   }
   @Put()
   updateItem() : any {
-    return this.appService.updateItem('');
+    // return this.appService.updateItem('');
   }
   @Delete()
   deleteItem() {
-    return this.appService.deleteItem('');
+    // return this.appService.deleteItem('');
   }
 }
 

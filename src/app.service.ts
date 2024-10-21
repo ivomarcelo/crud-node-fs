@@ -45,4 +45,5 @@ export class AppService {
     items = items.filter((item) => item.id !== id);
     this.writeData(items);
   }
+  
 }
