@@ -1,10 +1,15 @@
-import { Controller, Post, Delete, Put} from '@nestjs/common';
+import { Controller, Post, Delete, Get, Put} from '@nestjs/common';
 import { AppService } from './app.service';
 
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
+
+  @Get()
+  findOne(): any {
+    // return this.usersService.findOne(+id);
+  }
 
   @Post()
   createRoute(): any {
